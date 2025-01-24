@@ -32,7 +32,7 @@ public class RegisterPage {
     private By compfirmPassword = By.id("repeatedPassword");
     private By registerButton = By.xpath("//input[@value = 'Register']");
 
-    public void register(RegisterModel registerModel) {
+    public LoginPage register(RegisterModel registerModel) {
         driver.findElement(firstName).sendKeys(registerModel.getFirstName());
         driver.findElement(lastName).sendKeys(registerModel.getLastName());
         driver.findElement(address).sendKeys(registerModel.getAddress());
@@ -45,9 +45,10 @@ public class RegisterPage {
         driver.findElement(password).sendKeys(registerModel.getPassword());
         driver.findElement(compfirmPassword).sendKeys(registerModel.getPassword());
         driver.findElement(registerButton).click();
+        return new LoginPage(driver);
     }
 
-    public void registerWithFaker(RegisterModelFaker registerModelFaker) {
+    public LoginPage registerWithFaker(RegisterModelFaker registerModelFaker) {
         driver.findElement(firstName).sendKeys(registerModelFaker.getFirstName());
         driver.findElement(lastName).sendKeys(registerModelFaker.getLastName());
         driver.findElement(address).sendKeys(registerModelFaker.getAddress());
@@ -60,14 +61,11 @@ public class RegisterPage {
         driver.findElement(password).sendKeys(registerModelFaker.getPassword());
         driver.findElement(compfirmPassword).sendKeys(registerModelFaker.getPassword());
         driver.findElement(registerButton).click();
+        return new  LoginPage(driver);
     }
 
 
-    private By welcome = By.xpath("//h1[@class = 'title']");
 
-    public WebElement getWelcome() {
-        return driver.findElement(welcome);
-    }
 
     private By errorUsernameExists = By.id("customer.username.errors");
 

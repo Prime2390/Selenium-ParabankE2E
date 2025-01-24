@@ -4,6 +4,7 @@ import DominikBernas.basetest.BaseTest;
 import DominikBernas.models.RegisterModel;
 import DominikBernas.models.RegisterModelFaker;
 import DominikBernas.pages.HomePage;
+import DominikBernas.pages.LoginPage;
 import DominikBernas.pages.RegisterPage;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -12,7 +13,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 
-public class OpenRegisterPage extends BaseTest {
+public class RegisterTest extends BaseTest {
 
         @Test
         public void registrationWithFaker() {
@@ -24,7 +25,8 @@ public class OpenRegisterPage extends BaseTest {
     LogStep("Provides Data with Faker");
            new RegisterPage(driver)
                    .registerWithFaker(registerModelFaker);
-           WebElement alert = new RegisterPage(driver).getWelcome();
+           LogStep("Account login");
+           WebElement alert = new LoginPage(driver).getWelcome();
 
             LogStep("Test account has been created");
             Assert.assertTrue(alert.isDisplayed());
