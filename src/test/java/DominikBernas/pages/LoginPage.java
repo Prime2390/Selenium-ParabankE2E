@@ -9,9 +9,20 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
-    private By welcome = By.xpath("//h1[@class = 'title']");
 
+    private By welcome = By.xpath("//b[text()='Welcome']");
     public WebElement getWelcome() {
         return driver.findElement(welcome);
     }
+
+    private By errorMessage = By.xpath("//p[@class= 'error']");
+    public WebElement getErrorMessage() {
+        return driver.findElement(errorMessage);
+    }
+
+
+
+
+
+
 }

@@ -26,11 +26,13 @@ public class RegisterTest extends BaseTest {
            new RegisterPage(driver)
                    .registerWithFaker(registerModelFaker);
            LogStep("Account login");
+           LogStep("Assert");
            WebElement alert = new LoginPage(driver).getWelcome();
 
-            LogStep("Test account has been created");
+            LogStep("Verify if Account is logged in");
             Assert.assertTrue(alert.isDisplayed());
             Assert.assertTrue(alert.getText().contains("Welcome"));
+
 }
 
         @Test
@@ -44,8 +46,8 @@ public class RegisterTest extends BaseTest {
         registerModel.setZip("42-400");
         registerModel.setPhone("696596965");
         registerModel.setSsn("415262514536");
-        registerModel.setUsername("Tester2390");
-        registerModel.setPassword("Testerpass2390");
+        registerModel.setUsername("Tester123890");
+        registerModel.setPassword("Testerpass123890");
 
 
         LogStep("Opening Register Page");
@@ -54,6 +56,7 @@ public class RegisterTest extends BaseTest {
         LogStep("Provides Data");
         new RegisterPage(driver)
                 .register(registerModel);
+        LogStep("Assert");
         WebElement Error = new RegisterPage(driver).getErrorUsernameExists();
 
         Assert.assertTrue(Error.isDisplayed());

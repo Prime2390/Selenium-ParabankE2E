@@ -65,8 +65,6 @@ public class RegisterPage {
     }
 
 
-
-
     private By errorUsernameExists = By.id("customer.username.errors");
 
     public WebElement getErrorUsernameExists() {
