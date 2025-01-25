@@ -20,7 +20,7 @@ public class LogOutTest extends BaseTest {
         new LoginPage(driver).getLogOutButton();
         LogStep("Back to home page");
        WebElement CustomerLoginForm = new HomePage(driver).customerLoginForm();
-
+        LogStep("Assert");
        Assert.assertTrue(CustomerLoginForm.isDisplayed());
        Assert.assertEquals(CustomerLoginForm.getText(), "Customer Login");
 

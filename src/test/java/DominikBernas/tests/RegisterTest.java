@@ -16,7 +16,7 @@ import java.util.List;
 
 public class RegisterTest extends BaseTest {
 
-        @Test
+        @Test(retryAnalyzer = RetryAnalyzer.class)
         public void registrationWithFaker() {
     RegisterModelFaker registerModelFaker = new RegisterModelFaker();
 
@@ -36,7 +36,7 @@ public class RegisterTest extends BaseTest {
 
 }
 
-         @Test(retryAnalyzer = RetryAnalyzer.class)
+        @Test(retryAnalyzer = RetryAnalyzer.class)
         public void registrationWithUsedUsername() {
         RegisterModel registerModel = new RegisterModel();
         registerModel.setFirstName("Dominik");

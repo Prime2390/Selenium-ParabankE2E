@@ -36,7 +36,7 @@ public class BaseTest {
     }
     @BeforeMethod
     public void setUp(){
-        boolean isHeadless = false;
+        boolean isHeadless = true;
         driver = DriverFactory.getDriver(isHeadless);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

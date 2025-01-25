@@ -2,12 +2,9 @@ package DominikBernas.pages;
 
 import DominikBernas.models.RegisterModel;
 import DominikBernas.models.RegisterModelFaker;
-import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
