@@ -6,6 +6,7 @@ import DominikBernas.models.RegisterModelFaker;
 import DominikBernas.pages.HomePage;
 import DominikBernas.pages.LoginPage;
 import DominikBernas.pages.RegisterPage;
+import DominikBernas.utils.RetryAnalyzer;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -35,7 +36,7 @@ public class RegisterTest extends BaseTest {
 
 }
 
-        @Test
+         @Test(retryAnalyzer = RetryAnalyzer.class)
         public void registrationWithUsedUsername() {
         RegisterModel registerModel = new RegisterModel();
         registerModel.setFirstName("Dominik");
@@ -46,8 +47,8 @@ public class RegisterTest extends BaseTest {
         registerModel.setZip("42-400");
         registerModel.setPhone("696596965");
         registerModel.setSsn("415262514536");
-        registerModel.setUsername("Tester123890");
-        registerModel.setPassword("Testerpass123890");
+        registerModel.setUsername("Tester12390");
+        registerModel.setPassword("Testerpass12390");
 
 
         LogStep("Opening Register Page");

@@ -36,7 +36,8 @@ public class BaseTest {
     }
     @BeforeMethod
     public void setUp(){
-        driver = DriverFactory.getDriver();
+        boolean isHeadless = false;
+        driver = DriverFactory.getDriver(isHeadless);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
