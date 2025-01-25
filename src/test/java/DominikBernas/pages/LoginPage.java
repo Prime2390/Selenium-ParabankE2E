@@ -20,6 +20,12 @@ public class LoginPage {
         return driver.findElement(errorMessage);
     }
 
+    private By logOutButton = By.xpath("//a[text()='Log Out']");
+    public HomePage getLogOutButton() {
+        driver.findElement(logOutButton).click();
+        return new HomePage(driver);
+    }
+
 
 
 

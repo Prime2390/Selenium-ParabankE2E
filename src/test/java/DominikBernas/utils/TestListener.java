@@ -40,6 +40,6 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         BaseTest.test.info("Test suite finished: " + context.getName());
-        BaseTest.extent.flush(); // Zapis raportu po zakończeniu testów
+        BaseTest.extent.flush();
     }
 }

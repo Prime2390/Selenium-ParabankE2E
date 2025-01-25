@@ -47,8 +47,8 @@ public class RegisterTest extends BaseTest {
         registerModel.setZip("42-400");
         registerModel.setPhone("696596965");
         registerModel.setSsn("415262514536");
-        registerModel.setUsername("Tester12390");
-        registerModel.setPassword("Testerpass12390");
+        registerModel.setUsername("Tester2390");
+        registerModel.setPassword("Testerpass2390");
 
 
         LogStep("Opening Register Page");

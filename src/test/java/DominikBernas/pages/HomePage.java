@@ -5,6 +5,7 @@ import DominikBernas.models.UserModelFaker;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 
 public class HomePage {
@@ -36,4 +37,8 @@ public class HomePage {
         driver.findElement(loginButton).click();
         return new LoginPage(driver);
     }
+
+    private By customerLogin = By.xpath("//h2[text()='Customer Login']");
+    public WebElement customerLoginForm(){
+    return driver.findElement(customerLogin);}
 }
