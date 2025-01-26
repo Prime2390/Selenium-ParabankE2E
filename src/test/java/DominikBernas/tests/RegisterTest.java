@@ -24,7 +24,7 @@ public class RegisterTest extends BaseTest {
                     .registerWithFaker(registerModelFaker)
                     .getWelcome();
 
-            LogStep("Verify if Account is logged in");
+
             Assert.assertTrue(alert.isDisplayed());
             Assert.assertTrue(alert.getText().contains("Welcome"));
 
@@ -53,7 +53,7 @@ public class RegisterTest extends BaseTest {
 
         Assert.assertTrue(Error.isDisplayed());
         Assert.assertTrue(Error.getText().contains("This username already exists."));
-        LogStep("Error Message: " + Error.getText());
+
     }
 
     @Test
@@ -77,25 +77,16 @@ public class RegisterTest extends BaseTest {
                 .register(registerModel)
                 .errorsRequired(driver).stream().toList();
 
-        LogStep("Error Message: " + errorRequired.get(0).getText());
+
         Assert.assertTrue(errorRequired.get(0).getText().contains("First name is required."));
-        LogStep("Error Message: " + errorRequired.get(1).getText());
         Assert.assertTrue(errorRequired.get(1).getText().contains("Last name is required."));
-        LogStep("Error Message: " + errorRequired.get(2).getText());
         Assert.assertTrue(errorRequired.get(2).getText().contains("Address is required."));
-        LogStep("Error Message: " + errorRequired.get(3).getText());
         Assert.assertTrue(errorRequired.get(3).getText().contains("City is required."));
-        LogStep("Error Message: " + errorRequired.get(4).getText());
         Assert.assertTrue(errorRequired.get(4).getText().contains("State is required."));
-        LogStep("Error Message: " + errorRequired.get(5).getText());
         Assert.assertTrue(errorRequired.get(5).getText().contains("Zip Code is required."));
-        LogStep("Error Message: " + errorRequired.get(6).getText());
         Assert.assertTrue(errorRequired.get(6).getText().contains("Social Security Number is required."));
-        LogStep("Error Message: " + errorRequired.get(7).getText());
         Assert.assertTrue(errorRequired.get(7).getText().contains("Username is required."));
-        LogStep("Error Message: " + errorRequired.get(8).getText());
         Assert.assertTrue(errorRequired.get(8).getText().contains("Password is required."));
-        LogStep("Error Message: " + errorRequired.get(9).getText());
         Assert.assertTrue(errorRequired.get(9).getText().contains("Password confirmation is required."));
 
     }
