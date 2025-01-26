@@ -13,8 +13,10 @@ public class LoginTest extends BaseTest {
     @Test
     public void testLogin() {
         FirstUserModel firstUserModel = new FirstUserModel();
+        LogStep("Open page and enter data");
         new HomePage(driver)
                 .loginFirstUser(firstUserModel);
+        LogStep("Assert that user is logged in");
         WebElement welcome = new LoginPage(driver).getWelcome();
 
         Assert.assertTrue(welcome.isDisplayed());
@@ -24,8 +26,10 @@ public class LoginTest extends BaseTest {
     @Test
     public void testLoginWithWrongData() {
         UserModelFaker faker = new UserModelFaker();
+        LogStep("Open page and enter data");
         new HomePage(driver)
                 .loginFaker(faker);
+        LogStep("Assert wrong data");
         WebElement errorMessage = new LoginPage(driver).getErrorMessage();
 
         Assert.assertTrue(errorMessage.isDisplayed());
