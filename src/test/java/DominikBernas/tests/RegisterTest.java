@@ -4,8 +4,6 @@ import DominikBernas.basetest.BaseTest;
 import DominikBernas.models.RegisterModel;
 import DominikBernas.models.RegisterModelFaker;
 import DominikBernas.pages.HomePage;
-import DominikBernas.pages.LoginPage;
-import DominikBernas.pages.RegisterPage;
 import DominikBernas.utils.RetryAnalyzer;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -20,15 +18,11 @@ public class RegisterTest extends BaseTest {
         public void registrationWithFaker() {
     RegisterModelFaker registerModelFaker = new RegisterModelFaker();
 
-    LogStep("Opening Register Page");
-           new HomePage(driver).
-    registerButtonClick();
-    LogStep("Provides Data with Faker");
-           new RegisterPage(driver)
-                   .registerWithFaker(registerModelFaker);
-           LogStep("Account login");
-           LogStep("Assert");
-           WebElement alert = new LoginPage(driver).getWelcome();
+
+            WebElement alert =  new HomePage(driver)
+                    .registerButtonClick()
+                    .registerWithFaker(registerModelFaker)
+                    .getWelcome();
 
             LogStep("Verify if Account is logged in");
             Assert.assertTrue(alert.isDisplayed());
@@ -51,14 +45,11 @@ public class RegisterTest extends BaseTest {
         registerModel.setPassword("Testerpass2390");
 
 
-        LogStep("Opening Register Page");
-        new HomePage(driver).
-                registerButtonClick();
-        LogStep("Provides Data");
-        new RegisterPage(driver)
-                .register(registerModel);
-        LogStep("Assert");
-        WebElement Error = new RegisterPage(driver).getErrorUsernameExists();
+
+            WebElement Error =  new HomePage(driver)
+                    .registerButtonClick()
+                    .register(registerModel)
+                    .getErrorUsernameExists();
 
         Assert.assertTrue(Error.isDisplayed());
         Assert.assertTrue(Error.getText().contains("This username already exists."));
@@ -80,14 +71,10 @@ public class RegisterTest extends BaseTest {
         registerModel.setPassword("");
 
 
-        LogStep("Opening Register Page");
-        new HomePage(driver).
-                registerButtonClick();
-        LogStep("Provides Data");
-        new RegisterPage(driver)
-                .register(registerModel);
-        LogStep("Assert");
-        List<WebElement> errorRequired = new RegisterPage(driver)
+
+        List<WebElement> errorRequired = new HomePage(driver)
+                .registerButtonClick()
+                .register(registerModel)
                 .errorsRequired(driver).stream().toList();
 
         LogStep("Error Message: " + errorRequired.get(0).getText());

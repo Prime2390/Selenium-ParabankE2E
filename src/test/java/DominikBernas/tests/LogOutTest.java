@@ -13,16 +13,14 @@ public class LogOutTest extends BaseTest {
     public void LogOutFirstCustomer() {
         FirstUserModel user = new FirstUserModel();
 
-        LogStep("Open page and enter data");
-        new HomePage(driver)
-                .loginFirstUser(user);
-        LogStep("Click logout button");
-        new LoginPage(driver).getLogOutButton();
-        LogStep("Back to home page");
-       WebElement CustomerLoginForm = new HomePage(driver).customerLoginForm();
-        LogStep("Assert");
-       Assert.assertTrue(CustomerLoginForm.isDisplayed());
-       Assert.assertEquals(CustomerLoginForm.getText(), "Customer Login");
+
+        WebElement logout = new HomePage(driver)
+                .loginFirstUser(user)
+                .getLogOutButton()
+                .customerLoginForm();
+
+       Assert.assertTrue(logout.isDisplayed());
+       Assert.assertEquals(logout.getText(), "Customer Login");
 
     }
 }

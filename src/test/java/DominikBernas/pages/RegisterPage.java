@@ -29,7 +29,7 @@ public class RegisterPage {
     private By compfirmPassword = By.id("repeatedPassword");
     private By registerButton = By.xpath("//input[@value = 'Register']");
 
-    public LoginPage register(RegisterModel registerModel) {
+    public RegisterPage register(RegisterModel registerModel) {
         driver.findElement(firstName).sendKeys(registerModel.getFirstName());
         driver.findElement(lastName).sendKeys(registerModel.getLastName());
         driver.findElement(address).sendKeys(registerModel.getAddress());
@@ -42,7 +42,7 @@ public class RegisterPage {
         driver.findElement(password).sendKeys(registerModel.getPassword());
         driver.findElement(compfirmPassword).sendKeys(registerModel.getPassword());
         driver.findElement(registerButton).click();
-        return new LoginPage(driver);
+        return this;
     }
 
     public LoginPage registerWithFaker(RegisterModelFaker registerModelFaker) {

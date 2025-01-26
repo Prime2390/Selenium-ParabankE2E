@@ -26,7 +26,7 @@ public class OpenNewAccountTest extends BaseTest {
     @Test
     public void openNewAccountPage() {
 
-        LogStep("");
+
         FirstUserModel firstUserModel = new FirstUserModel();
     WebElement title =  new HomePage(driver)
                 .loginFirstUser(firstUserModel)
