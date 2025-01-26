@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="" />
+    <list default="true" id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ExtentReport.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +54,7 @@
     "TestNG.RegisterTest.registrationWithFaker.executor": "Run",
     "TestNG.RegisterTest.registrationWithUsedUsername.executor": "Run",
     "TestNG.RegisterTest.registrationWithoutData.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dominik/Desktop/Nauka/Selenium/ParaBankE2E/src",
     "node.js.detected.package.eslint": "true",
@@ -190,6 +193,7 @@
       <workItem from="1737707049984" duration="14057000" />
       <workItem from="1737805827272" duration="2382000" />
       <workItem from="1737820277040" duration="1831000" />
+      <workItem from="1737892241794" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="Add Register Test">
       <option name="closed" value="true" />
@@ -247,7 +251,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737821888490</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Change in gitignore">
+      <option name="closed" value="true" />
+      <created>1737892301244</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737892301244</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add .idea">
+      <option name="closed" value="true" />
+      <created>1737892381066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737892381066</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +282,8 @@
     <MESSAGE value="Add function RetryAnalyzer and FideTest" />
     <MESSAGE value="Dodanie LogoutTest" />
     <MESSAGE value="Repear" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repear" />
+    <MESSAGE value="Change in gitignore" />
+    <MESSAGE value="add .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea" />
   </component>
 </project>
