@@ -36,7 +36,7 @@ public class BaseTest {
     }
     @BeforeMethod
     public void setUp(){
-        boolean isHeadless = true;
+        boolean isHeadless = false;
         driver = DriverFactory.getDriver(isHeadless);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -46,7 +46,7 @@ public class BaseTest {
     }
     @AfterMethod
     public void tearDown(){
-       // driver.quit();
+     //   driver.quit();
     }
 
 }

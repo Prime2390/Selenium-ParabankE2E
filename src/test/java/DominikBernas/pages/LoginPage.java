@@ -26,6 +26,11 @@ public class LoginPage {
         return new HomePage(driver);
     }
 
+    private By OpenNewAccountButton = By.xpath("//*[@id=\"leftPanel\"]/ul/li[1]/a");
+    public NewAccountPage OpenNewAccountClick() {
+        driver.findElement(OpenNewAccountButton).click();
+        return new NewAccountPage(driver);
+    }
 
 
 

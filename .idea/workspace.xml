@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="" />
+    <list default="true" id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/DominikBernas/pages/NewAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DominikBernas/tests/OpenNewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DominikBernas/basetest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DominikBernas/basetest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DominikBernas/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DominikBernas/pages/LoginPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,8 +45,12 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.DominikBernas.tests.executor": "Run",
     "TestNG.LogOutTest.LogOutFirstCustomer.executor": "Run",
+    "TestNG.LogOutTest.executor": "Run",
     "TestNG.LoginTest.testLogin.executor": "Run",
     "TestNG.LoginTest.testLoginWithWrongData.executor": "Run",
+    "TestNG.OpenNewAccountTest.openNewAccount.executor": "Run",
+    "TestNG.OpenNewAccountTest.openNewAccountPage (1).executor": "Debug",
+    "TestNG.OpenNewAccountTest.openNewAccountPage.executor": "Run",
     "TestNG.OpenRegisterPage.executor": "Run",
     "TestNG.OpenRegisterPage.openRegisterPage.executor": "Run",
     "TestNG.OpenRegisterPage.reatingTestAccount.executor": "Run",
@@ -71,24 +81,8 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DominikBernas.tests">
-    <configuration name="DominikBernas.tests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ParaBankE2E" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DominikBernas.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogOutTest.LogOutFirstCustomer" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.OpenNewAccountTest.openNewAccount">
+    <configuration name="LogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ParaBankE2E" />
       <extension name="coverage">
         <pattern>
@@ -98,15 +92,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="DominikBernas.tests" />
       <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.LogOutTest" />
-      <option name="METHOD_NAME" value="LogOutFirstCustomer" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLoginWithWrongData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ParaBankE2E" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +109,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="DominikBernas.tests" />
       <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testLoginWithWrongData" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenNewAccountTest.openNewAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.OpenNewAccountTest" />
+      <option name="METHOD_NAME" value="openNewAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenNewAccountTest.openNewAccountPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.OpenNewAccountTest" />
+      <option name="METHOD_NAME" value="openNewAccountPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,31 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest.registrationWithoutData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ParaBankE2E" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DominikBernas.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
-      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.RegisterTest" />
-      <option name="METHOD_NAME" value="registrationWithoutData" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DominikBernas.tests" />
-        <item itemvalue="TestNG.LogOutTest.LogOutFirstCustomer" />
+        <item itemvalue="TestNG.OpenNewAccountTest.openNewAccount" />
+        <item itemvalue="TestNG.OpenNewAccountTest.openNewAccountPage" />
         <item itemvalue="TestNG.RegisterTest.registrationWithUsedUsername" />
-        <item itemvalue="TestNG.RegisterTest.registrationWithoutData" />
-        <item itemvalue="TestNG.LoginTest.testLoginWithWrongData" />
+        <item itemvalue="TestNG.LogOutTest" />
+        <item itemvalue="TestNG.LoginTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +201,8 @@
       <workItem from="1737707049984" duration="14057000" />
       <workItem from="1737805827272" duration="2382000" />
       <workItem from="1737820277040" duration="1831000" />
-      <workItem from="1737892241794" duration="1050000" />
+      <workItem from="1737892241794" duration="6385000" />
+      <workItem from="1737903929739" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="Add Register Test">
       <option name="closed" value="true" />
@@ -280,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737892779919</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Workspace">
+      <option name="closed" value="true" />
+      <created>1737893646556</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737893646556</updated>
+    </task>
+    <task id="LOCAL-00013" summary="LogStep add">
+      <option name="closed" value="true" />
+      <created>1737895394186</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737895394189</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +327,8 @@
     <MESSAGE value="add .idea" />
     <MESSAGE value="Add DS_Store to ignor" />
     <MESSAGE value="add change" />
-    <option name="LAST_COMMIT_MESSAGE" value="add change" />
+    <MESSAGE value="Workspace" />
+    <MESSAGE value="LogStep add" />
+    <option name="LAST_COMMIT_MESSAGE" value="LogStep add" />
   </component>
 </project>
