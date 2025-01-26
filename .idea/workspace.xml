@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2s4F8k7ohs7YYQiis0T4KpGM5vX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.DominikBernas.tests.executor": "Run",
+    "TestNG.LogOutTest.LogOutFirstCustomer.executor": "Run",
+    "TestNG.LoginTest.testLogin.executor": "Run",
+    "TestNG.LoginTest.testLoginWithWrongData.executor": "Run",
+    "TestNG.OpenRegisterPage.executor": "Run",
+    "TestNG.OpenRegisterPage.openRegisterPage.executor": "Run",
+    "TestNG.OpenRegisterPage.reatingTestAccount.executor": "Run",
+    "TestNG.OpenRegisterPage.registrationTestAccount.executor": "Run",
+    "TestNG.OpenRegisterPage.registrationWithFaker.executor": "Run",
+    "TestNG.OpenRegisterPage.registrationWithoutData.executor": "Run",
+    "TestNG.RegisterTest.executor": "Run",
+    "TestNG.RegisterTest.registrationWithFaker.executor": "Run",
+    "TestNG.RegisterTest.registrationWithUsedUsername.executor": "Run",
+    "TestNG.RegisterTest.registrationWithoutData.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dominik/Desktop/Nauka/Selenium/ParaBankE2E/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DominikBernas.pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.DominikBernas.tests">
+    <configuration name="DominikBernas.tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOutTest.LogOutFirstCustomer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.LogOutTest" />
+      <option name="METHOD_NAME" value="LogOutFirstCustomer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testLoginWithWrongData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.LoginTest" />
+      <option name="METHOD_NAME" value="testLoginWithWrongData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.registrationWithUsedUsername" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.RegisterTest" />
+      <option name="METHOD_NAME" value="registrationWithUsedUsername" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.registrationWithoutData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ParaBankE2E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DominikBernas.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DominikBernas.tests" />
+      <option name="MAIN_CLASS_NAME" value="DominikBernas.tests.RegisterTest" />
+      <option name="METHOD_NAME" value="registrationWithoutData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.DominikBernas.tests" />
+        <item itemvalue="TestNG.LogOutTest.LogOutFirstCustomer" />
+        <item itemvalue="TestNG.RegisterTest.registrationWithUsedUsername" />
+        <item itemvalue="TestNG.RegisterTest.registrationWithoutData" />
+        <item itemvalue="TestNG.LoginTest.testLoginWithWrongData" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b6b8748-e22a-454a-ac8b-feb7011c3325" name="Changes" comment="" />
+      <created>1737706785565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737706785565</updated>
+      <workItem from="1737706786903" duration="252000" />
+      <workItem from="1737707049984" duration="14057000" />
+      <workItem from="1737805827272" duration="2382000" />
+      <workItem from="1737820277040" duration="1831000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add Register Test">
+      <option name="closed" value="true" />
+      <created>1737739319121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737739319121</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FakerRegisterModel">
+      <option name="closed" value="true" />
+      <created>1737739352448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737739352449</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add LoginPage">
+      <option name="closed" value="true" />
+      <created>1737740821373</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737740821373</updated>
+    </task>
+    <task id="LOCAL-00004" summary="LoginTest">
+      <option name="closed" value="true" />
+      <created>1737743246793</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737743246793</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add function RetryAnalyzer and FideTest">
+      <option name="closed" value="true" />
+      <created>1737808147311</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737808147311</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dodanie LogoutTest">
+      <option name="closed" value="true" />
+      <created>1737821452601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737821452601</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Repear">
+      <option name="closed" value="true" />
+      <created>1737821888490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737821888490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ignorowanie .idea" />
+    <MESSAGE value="Add Register Test" />
+    <MESSAGE value="FakerRegisterModel" />
+    <MESSAGE value="Add LoginPage" />
+    <MESSAGE value="LoginTest" />
+    <MESSAGE value="Add function RetryAnalyzer and FideTest" />
+    <MESSAGE value="Dodanie LogoutTest" />
+    <MESSAGE value="Repear" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repear" />
+  </component>
+</project>
