@@ -16,11 +16,15 @@ public class RegisterModelFaker {
     private String pesel = faker.idNumber().valid();
     private String login = faker.name().username();
     private String password = faker.internet().password();
+    private String confirmPassword = faker.internet().password();
 
     public Faker getFaker() {
         return faker;
     }
 
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
     public String getFirstName() {
         return firstName;
     }

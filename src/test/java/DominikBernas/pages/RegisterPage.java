@@ -60,7 +60,21 @@ public class RegisterPage {
         driver.findElement(registerButton).click();
         return new  LoginPage(driver);
     }
-
+    public RegisterPage registerWithFakerConfirm(RegisterModelFaker registerModelFaker) {
+        driver.findElement(firstName).sendKeys(registerModelFaker.getFirstName());
+        driver.findElement(lastName).sendKeys(registerModelFaker.getLastName());
+        driver.findElement(address).sendKeys(registerModelFaker.getAddress());
+        driver.findElement(city).sendKeys(registerModelFaker.getCity());
+        driver.findElement(state).sendKeys(registerModelFaker.getState());
+        driver.findElement(zip).sendKeys(registerModelFaker.getZipCode());
+        driver.findElement(phone).sendKeys(registerModelFaker.getPhoneNumber());
+        driver.findElement(ssn).sendKeys(registerModelFaker.getPesel());
+        driver.findElement(username).sendKeys(registerModelFaker.getLogin());
+        driver.findElement(password).sendKeys(registerModelFaker.getPassword());
+        driver.findElement(compfirmPassword).sendKeys(registerModelFaker.getConfirmPassword());
+        driver.findElement(registerButton).click();
+        return this;
+    }
 
     private By errorUsernameExists = By.id("customer.username.errors");
 
@@ -85,6 +99,12 @@ public class RegisterPage {
                 .map(driver::findElement)
                 .collect(Collectors.toList());
     }
+
+    private By errorRepeatedPassword = By.xpath("//*[@id=\"repeatedPassword.errors\"]");
+    public WebElement getErrorRepeatedPassword() {
+        return driver.findElement(errorRepeatedPassword);
+    }
+
 }
 
 
